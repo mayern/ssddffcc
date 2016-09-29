@@ -38,4 +38,14 @@ luac.out
 *.i*86
 *.x86_64
 *.hex
+main.lua
+--
+-----------------------------------------------------------------------------------------
+ local physics = require ( "physics" )
+ physics.start()
+halfW = display.contentWidth*0.5
+halfH = display.contentHeight*0.5
+local bkg = display.newImage( "neighbors.png", halfW, halfH )
 
+score = 0
+scoreText = display.newText(score, halfW, 10)
